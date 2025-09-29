@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TP2 — To-Do List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1>To-Do List</h1>
+      <p class="subtitle">TP JavaScript — gestion des tâches</p>
+    </header>
+
+    <section class="controls">
+      <input id="taskInput" class="input" type="text" placeholder="Ajouter une nouvelle tâche..." />
+      <button id="addBtn" class="btn">Ajouter</button>
+      <button id="completeBtn" class="btn btn--success">Terminer</button>
+      <button id="deleteBtn" class="btn btn--danger">Supprimer</button>
+    </section>
+
+    <section class="stats">
+      <span id="totalCount">Total: 0</span>
+      <span id="doneCount">Terminées: 0</span>
+    </section>
+
+    <ul id="taskList" class="task-list" aria-live="polite">
+      <!-- Les tâches seront insérées ici dynamiquement -->
+    </ul>
+
+    
+  </main>
+
+  <!-- Place pour ton script JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html>
